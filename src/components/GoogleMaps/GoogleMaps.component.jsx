@@ -17,7 +17,7 @@ class GoogleMaps extends Component {
   state = {
     apiKey: {
       development: "",
-      product: "AIzaSyBeNxnshtVO9hcgIacX_gHmqtFEY2nm49o"
+      product: ""
     },
     markers: [
       {
@@ -40,23 +40,6 @@ class GoogleMaps extends Component {
       },
     ]
   };
-
-  // const Markers = this.markers &&
-  //   this.props.markers.filter((m, index) => index >= rowFrom && index <= rowTo)
-  //     .map((marker, index) => (
-  //       <MarkerExample
-  //         // required props
-  //         key={marker.get('id')}
-  //         lat={marker.get('lat')}
-  //         lng={marker.get('lng')}
-  //         // any user props
-  //         showBallon={index + rowFrom === this.props.openBallonIndex}
-  //         onCloseClick={this._onBalloonCloseClick}
-  //         hoveredAtTable={index + rowFrom === this.props.hoveredRowIndex}
-  //         scale={getScale(index + rowFrom, this.props.visibleRowFirst, this.props.visibleRowLast, K_SCALE_NORMAL)}
-  //         {...markerDescriptions[marker.get('type')]}
-  //         marker={marker} />
-  //     ));
   
   render() {
     const Markers = this.state.markers
@@ -86,5 +69,3 @@ class GoogleMaps extends Component {
 }
 
 export default GoogleMaps;
-
-        //   <AnyReactComponent lat={49.2246} lng={-123.1087} text="My Marker" />;
